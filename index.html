@@ -3,108 +3,462 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hsu Myat Mon Kyaw | Computer Science Student</title>
+    <!-- <title>Hsu Myat Mon Kyaw | Aspiring Frontend Developer</title> -->
+    <meta
+      name="description"
+      content="Computer Science student specializing in modern web development with React, TypeScript, and clean UI design."
+    />
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>"
+    />
   </head>
-
-  <body class="dark">
-    <!-- NAVBAR -->
+  <body class="dark-mode">
+    <!-- Navigation -->
     <nav class="navbar">
-      <div class="nav-container">
-        <div class="logo">Hsu Myat</div>
-
-        <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
+      <div class="container">
+        <a href="#home" class="logo">HMMK</a>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#contact" class="nav-btn">Contact</a></li>
         </ul>
-
-        <button id="theme-toggle">🌙</button>
+        <div class="nav-right">
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
       </div>
     </nav>
 
-    <!-- HERO -->
-    <section class="hero fullscreen" id="hero">
-      <div class="hero-content">
-        <div class="profile-img">
-          <img src="profile.jpg" alt="Profile Photo" />
-        </div>
-
-        <div class="hero-text">
-          <h1>Hsu Myat Mon Kyaw</h1>
-          <h2>Computer Science Student</h2>
-
-          <p>
-            Focused on computer science fundamentals, logical problem-solving,
-            and building a strong technical foundation.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#contact" class="primary-btn">Contact</a>
-            <a href="#" class="secondary-btn">Resume</a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <!-- <div class="hero-badge">Seeking Internship</div> -->
+            <h1 class="hero-title">Hsu Myat Mon Kyaw</h1>
+            <!-- <h2 class="hero-subtitle">Aspiring Frontend Developer</h2> -->
+            <p class="hero-description">
+              Computer Science student passionate about creating clean,
+              efficient web applications. Currently seeking opportunities to
+              grow as a frontend developer and start my professional journey.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span>View Projects</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <i class="fas fa-envelope"></i>
+                <span>Contact Me</span>
+              </a>
+            </div>
+            <div class="hero-links">
+              <a
+                href="https://github.com/hsu-myat-mon-kyaw"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://linkedin.com/in/HsuMyatMonKyaw"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:hsumyatmonkyaw21@email.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="profile-container">
+              <div class="profile-image">
+                <img src="profile.jpg" alt="Hsu Myat Mon Kyaw" />
+              </div>
+              <div class="profile-dots">
+                <span class="dot dot-1"></span>
+                <span class="dot dot-2"></span>
+                <span class="dot dot-3"></span>
+              </div>
+              <!-- <div class="profile-badge">
+                <i class="fas fa-code"></i>
+                <span>Available for Internship</span>
+              </div> -->
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="section about-section" id="about">
-      <div class="section-container narrow">
-        <h2>About me</h2>
-        <p>
-          I am a Computer Science student interested in software systems,
-          data-oriented thinking, and clean problem-solving approaches.
-        </p>
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">My Journey</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-content">
+            <p>
+              Computer Science student at University of Computer Studies, Pyay,
+              passionate about frontend development. Actively building skills
+              through hands-on projects and focused on creating clean,
+              responsive web interfaces.
+            </p>
+            <div class="about-features">
+              <div class="feature">
+                <i class="fas fa-university"></i>
+                <div>
+                  <h4>Education</h4>
+                  <p>University of Computer Studies, Pyay</p>
+                </div>
+              </div>
+              <div class="feature">
+                <i class="fas fa-laptop-code"></i>
+                <div>
+                  <h4>Focus</h4>
+                  <p>Frontend Web Development</p>
+                </div>
+              </div>
+              <div class="feature">
+                <i class="fas fa-bullseye"></i>
+                <div>
+                  <h4>Goal</h4>
+                  <p>Web Developer Internship</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <div class="stat-content">
+                <h3>2+</h3>
+                <p>Projects</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <div class="stat-content">
+                <h3>Ready</h3>
+                <p>To Learn</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="stat-content">
+                <h3>CS</h3>
+                <p>Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- EDUCATION (COMPACT) -->
-    <section class="section" id="education">
-      <div class="section-container narrow">
-        <h2>Education</h2>
-        <p>
-          <strong>University of Computer Studies, Pyay</strong><br />
-          Computer Science
-        </p>
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">My Skills</span>
+          <h2 class="section-title">Technical Expertise</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="skill-header">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">HTML5</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">CSS3</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">React</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-header">
+              <i class="fas fa-tools"></i>
+              <h3>Tools & Others</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Git & GitHub</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Responsive Design</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <!-- <div class="skill-item">
+                <span class="skill-name">PHP</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div> -->
+              <div class="skill-item">
+                <span class="skill-name">MySQL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-header">
+              <i class="fas fa-bolt"></i>
+              <h3>Currently Learning</h3>
+            </div>
+            <div class="skill-tags">
+              <!-- <span class="skill-tag">TypeScript</span> -->
+              <span class="skill-tag">Next.js</span>
+              <!-- <span class="skill-tag">Tailwind CSS</span> -->
+              <span class="skill-tag">API Integration</span>
+              <span class="skill-tag">Testing</span>
+              <span class="skill-tag">Performance</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- CONTACT (COMPACT & PROFESSIONAL) -->
-    <section class="section contact-section" id="contact">
-      <div class="section-container narrow">
-        <h2>Contact</h2>
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">My Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-tint"></i>
+              </div>
+              <div class="project-badges">
+                <span class="project-badge">Full Stack</span>
+                <span class="project-badge">Web App</span>
+              </div>
+            </div>
+            <h3 class="project-title">Blood Donation System</h3>
+            <p class="project-description">
+              Web platform connecting donors with recipients. Features user
+              registration, donor search, appointment scheduling, and inventory
+              management.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://yaung-ni.vercel.app/"
+                class="project-link"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i>
+                <span>Live Demo</span>
+              </a>
+              <a
+                href="https://github.com/hsu-myat-mon-kyaw/yaung-ni"
+                class="project-link"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+                <span>View Code</span>
+              </a>
+            </div>
+          </div>
 
-        <p>
-          Email —
-          <a href="mailto:hsumyatmonkyaw21@email.com">
-            hsumyatmonkyaw21@email.com
-          </a>
-        </p>
-
-        <p>
-          LinkedIn —
-          <a href="https://linkedin.com/in/HsuMyatMonKyaw" target="_blank">
-            linkedin.com/in/HsuMyatMonKyaw
-          </a>
-        </p>
-
-        <p>
-          GitHub —
-          <a href="https://github.com/hsu-myat-mon-kyaw" target="_blank">
-            github.com/hsu-myat-mon-kyaw
-          </a>
-        </p>
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-film"></i>
+              </div>
+              <div class="project-badges">
+                <span class="project-badge">Web App</span>
+                <span class="project-badge">Dynamic</span>
+              </div>
+            </div>
+            <h3 class="project-title">Movie Discovery Platform</h3>
+            <p class="project-description">
+              Movie database with search, ratings, and reviews. Built with PHP
+              backend for dynamic content loading and responsive design.
+            </p>
+            <div class="project-tech">
+              <span>PHP</span>
+              <span>JavaScript</span>
+              <span>MySQL</span>
+              <span>CSS Grid</span>
+              <span>Responsive</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://movies-php.vercel.app/"
+                class="project-link"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i>
+                <span>Live Demo</span>
+              </a>
+              <a
+                href="https://github.com/hsu-myat-mon-kyaw/movies-php"
+                class="project-link"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+                <span>View Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer>
-      <p>© 2026 Hsu Myat Mon Kyaw</p>
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+        </div>
+        <div class="contact-content">
+          <p class="contact-intro">
+            I'm actively looking for internship opportunities where I can
+            contribute and grow. Feel free to reach out if you're looking for a
+            motivated junior developer!
+          </p>
+          <div class="contact-grid">
+            <a href="mailto:hsumyatmonkyaw21@email.com" class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3>Email</h3>
+              <p>hsumyatmonkyaw21@email.com</p>
+              <div class="contact-link">Send Message →</div>
+            </a>
+
+            <a
+              href="https://linkedin.com/in/HsuMyatMonKyaw"
+              target="_blank"
+              class="contact-card"
+            >
+              <div class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <h3>LinkedIn</h3>
+              <p>linkedin.com/in/HsuMyatMonKyaw</p>
+              <div class="contact-link">Connect Now →</div>
+            </a>
+
+            <a
+              href="https://github.com/hsu-myat-mon-kyaw"
+              target="_blank"
+              class="contact-card"
+            >
+              <div class="contact-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <h3>GitHub</h3>
+              <p>github.com/hsu-myat-mon-kyaw</p>
+              <div class="contact-link">View Projects →</div>
+            </a>
+          </div>
+
+          <!-- <div class="contact-cta">
+            <p>Ready to start my professional journey with your team</p>
+            <a
+              href="mailto:hsumyatmonkyaw21@email.com"
+              class="btn btn-primary btn-large"
+            >
+              <i class="fas fa-paper-plane"></i>
+              <span>Send Me an Email</span>
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-social">
+            <a href="https://github.com/hsu-myat-mon-kyaw" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/HsuMyatMonKyaw" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:hsumyatmonkyaw21@email.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <p class="copyright">&copy; 2024 Hsu Myat Mon Kyaw</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
